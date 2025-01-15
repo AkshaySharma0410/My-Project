@@ -1,0 +1,131 @@
+body {
+  background-color: #252531;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin-bottom: 5rem;
+  line-height: 1;
+}
+
+.evcs-header {
+  height: 5rem;
+  background-color: #7ed45e;
+  color: white;
+  padding-top: 0.2rem;
+}
+
+.evcs-header h4,
+.evcs-header h6 {
+  margin: 0rem;
+}
+
+.evcs-back-color,
+input[type="range"] + .thumb,
+.selectStationBtn:focus {
+  background-color: #7ed45e;
+}
+
+.evcs-text-color {
+  color: #7ed45e;
+}
+
+.evcs-tagline {
+  font-style: bold;
+}
+
+.evcs-text {
+  color: #252531;
+  font-weight: bold;
+}
+
+.evcs-main {
+  padding-top: 1%;
+  max-width: 95%;
+  width: 95%;
+  max-height: 75%;
+  height: 75%;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.location-info {
+  display: block;
+}
+
+.dropdown-content li > span,
+select > option,
+.select {
+  font-size: 15px;
+}
+
+.search-button-margin {
+  margin-top: 2em;
+}
+
+/* Map related CSS*/
+#map {
+  height: 100%;
+  width: auto;
+  padding: 1 rem;
+}
+
+#search-results {
+  margin-bottom: 5rem;
+  padding-bottom: 1rem;
+  min-height: 200px;
+  max-height: calc(75% - 190px);
+  height: auto;
+  overflow-y: auto;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* =============== */
+.btn,
+.footer {
+  background-color: #7ed45e;
+}
+
+.footer {
+  height: 5rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem;
+  box-shadow: 20px 20px 18px 20px #ffffff;
+  z-index: 1;
+}
+
+.search-container {
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+.selectStationBtn {
+  margin-right: 1rem;
+}
+
+/* "search" button margin scales for smaller viewports*/
+@media (max-width: 600px) {
+  .search-button-margin {
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  #search-results {
+    margin-bottom: 1rem;
+    max-height: unset;
+  }
+
+  #map {
+    margin-bottom: 5rem;
+  }
+}
